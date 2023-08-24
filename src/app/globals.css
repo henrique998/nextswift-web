@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100%;
+}
+
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+input[type="number"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.brand-gradient {
+  background-color: #7913FC;
+}
+
+.badge-shadow {
+  box-shadow: 0px 2px 8px 0px rgba(121, 19, 252, 0.70);
+}
+
+.products-box-height {
+  min-height: 100vh - 162px
+}
+
+.product-shadow {
+  box-shadow: 0px 2px 8px 0px #C1C0C0;
+}
+
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+h1.heading {
+  font-size: 32px;
+}
+
+h2.heading {
+  font-size: 26px;
+}
+
+h3.heading {
+  font-size: 20px;
+}
+
+h4.heading {
+  font-size: 16px;
+}
+
+h5.heading {
+  font-size: 14px;
+}
+
+h6.heading {
+  font-size: 12px;
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #fff;
+  border-top: 3px solid #5f0fce;
+  border-radius: 50%;
+  animation: spinner-animation 1s infinite linear;
+}
+
+.spinner-dark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #fff;
+  border-top: 3px solid #1b1c21;
+  border-radius: 50%;
+  animation: spinner-animation 1s infinite linear;
+}
+
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.desc-container {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
